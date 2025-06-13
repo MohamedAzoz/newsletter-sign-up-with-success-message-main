@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+<main>
+<!-- Sign-up form start -->
+
+<section class="container show">
+  <div class="container__content">
+    <div class="container__content__text">
+      <h1 class="container__content__text__h1">Stay updated!</h1>
+      <p class="container__content__text__p">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="container__content__text__ul">
+        <li class="container__content__text__ul__li">Product discovery and building what matters</li>
+        <li class="container__content__text__ul__li">Measuring to ensure updates are a success</li>
+        <li class="container__content__text__ul__li">And much more!</li>
+      </ul>
+    </div>
+    <div class="container__content__form">
+      <!-- <form class="form" >
+        <div class="form__email">
+          <label for="email" class="form__email__text">Email address</label>
+          <input type="email" name="email" id="email" placeholder="email@company.com">
+        </div>
+        <div class="form__submit">
+          <input type="submit" id="submit" onclick="send()" value="Subscribe to monthly newsletter" required>
+        </div> -->
+        <div class="form">
+        <div class="form__email">
+          <div  class="form__email__text">
+            <label for="email" class="form__email__text__label">Email address</label>
+            <p id="invalid_email" class="hidden form__email__text__error">valid email required</p>
+            <!-- <p class="form__email__text__error">valid email required</p> -->
+          </div>
+          <input type="email" name="email" id="email" placeholder="email@company.com">
+        </div>
+        <div class="form__submit">
+          <input type="submit" id="submit" value="Subscribe to monthly newsletter" required>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="container__img">
+     <picture>
+       <source media="(min-width:1100px )" srcset="./assets/images/illustration-sign-up-desktop.svg">
+       <source media="(min-width:377px )" srcset="./assets/images/illustration-sign-up-tablet.svg">
+       <source media="(max-width:377px )" srcset="./assets/images/illustration-sign-up-mobile.svg">
+       <img class="container__img__img" src="" alt="image">
+    </picture>
+  </div>
+</section>
+
+<!-- Sign-up form end -->
+
+<!-- Success message start -->
+
+<section class="container__Success hidden">
+  <img class="container__Success__img" src="./assets/images/icon-success.svg" alt="icon-success">
+  <h1 class="container__Success__h1">Thanks for subscribing!</h1>
+  <p class="container__Success__p">
+    A confirmation email has been sent to <strong class="container__Success__email">ash@loremcompany.com.</strong>  
+    Please open it and click the button inside to confirm your subscription.
+  </p>
+  <button class="container__Success__button">Dismiss message</button>  
+</section>
+<!-- Success message end -->
+
+</main>
+  <script src="main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script> -->
+</body>
+</html>
